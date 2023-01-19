@@ -1,0 +1,187 @@
+:root {
+    border-style: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+body * + * {
+    margin-top: 1.5em;
+}
+
+header {
+    padding: 1em;
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main {
+    width: 100%;
+    padding: 1em 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+    color: black;
+}
+
+.buttons {
+    float: right;
+    width: 17%;
+    padding: 1.5em;
+    margin-top: 0;
+    background-color: #fff;
+    border-radius: .5em;
+}
+
+.button {
+    display: block;
+    padding: .5em;
+    margin-left: .5em;
+    color: #fff;
+    background-color: #0090c9;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    color: #0090c9;
+    background-color: #0072b0 #eee;
+    background-color: #eee;
+    transition-duration: 0.2s;
+}
+
+.button-text {
+    font-size: 20px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-align: inherit;
+}
+
+img {
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 1em;
+    color: #fff;
+    background-color: #0072b0;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+footer a {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    float: center;
+}
+
+.footer-links a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    float: center;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    footer h2 {
+        font-size: 3em;
+    }
+
+    .footer-links a {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 1.5em;
+        border-radius: 10px;
+    }
+
+    .button-text {
+        font-size: 35px;
+        font-weight: 500;
+        font-stretch: expanded;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .button {
+        font-size: 2em;
+        border-radius: 10px;
+    }
+
+    .buttons {
+        padding: 0%;
+    }
+
+    h1 {
+        font-size: 50;
+    }
+
+    h2 {
+        font-size: 45;
+    }
+
+    p {
+        font-size: 30;
+    }
+}
